@@ -1,0 +1,183 @@
+html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rekomendasi Obat Apotek</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #2196F3;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        nav {
+            background-color: #1976D2;
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .medicine-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .medicine-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1rem;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .medicine-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+        .medicine-card h3 {
+            margin: 1rem 0;
+            color: #333;
+        }
+
+        .medicine-card p {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .category {
+            background-color: #E3F2FD;
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #1976D2;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Rekomendasi Obat Apotek</h1>
+        <p>Informasi obat-obatan yang tersedia di apotek</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#kategori">Kategori</a></li>
+            <li><a href="#tentang">Tentang Kami</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="beranda">
+            <h2>Obat-obatan Populer</h2>
+            <div class="medicine-grid">
+                <div class="medicine-card">
+                    <img src="/api/placeholder/300/200" alt="Paracetamol">
+                    <h3>Paracetamol</h3>
+                    <p>Obat untuk menurunkan demam dan meredakan nyeri</p>
+                    <p><strong>Harga:</strong> Rp 10.000</p>
+                </div>
+                <div class="medicine-card">
+                    <img src="/api/placeholder/300/200" alt="Amoxicillin">
+                    <h3>Amoxicillin</h3>
+                    <p>Antibiotik untuk mengatasi infeksi bakteri</p>
+                    <p><strong>Harga:</strong> Rp 25.000</p>
+                </div>
+                <div class="medicine-card">
+                    <img src="/api/placeholder/300/200" alt="Antasida">
+                    <h3>Antasida</h3>
+                    <p>Obat untuk meredakan sakit maag dan kembung</p>
+                    <p><strong>Harga:</strong> Rp 15.000</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="kategori" class="category">
+            <h2>Kategori Obat</h2>
+            <div class="medicine-grid">
+                <div class="medicine-card">
+                    <h3>Obat Bebas</h3>
+                    <p>Obat yang dapat dibeli tanpa resep dokter</p>
+                </div>
+                <div class="medicine-card">
+                    <h3>Obat Bebas Terbatas</h3>
+                    <p>Obat yang dapat dibeli dengan pengawasan apoteker</p>
+                </div>
+                <div class="medicine-card">
+                    <h3>Obat Keras</h3>
+                    <p>Obat yang hanya dapat dibeli dengan resep dokter</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="tentang">
+            <h2>Tentang Kami</h2>
+            <p>Kami adalah apotek terpercaya yang menyediakan berbagai macam obat-obatan berkualitas. Dengan pengalaman lebih dari 10 tahun, kami berkomitmen untuk memberikan pelayanan terbaik bagi kesehatan Anda.</p>
+        </section>
+
+        <section id="kontak">
+            <h2>Kontak</h2>
+            <p>Alamat: Jl. Kesehatan No. 123, Jakarta</p>
+            <p>Telepon: (021) 123-4567</p>
+            <p>Email: info@apotek.com</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Rekomendasi Obat Apotek. Hak Cipta Dilindungi.</p>
+    </footer>
+</body>
+</html>
+
+
